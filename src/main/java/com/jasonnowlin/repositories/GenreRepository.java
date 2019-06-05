@@ -1,6 +1,6 @@
-package com.crackedskull.repositories;
+package com.jasonnowlin.repositories;
 
-import com.crackedskull.domain.Genre;
+import com.jasonnowlin.domain.Genre;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 
 public interface GenreRepository extends Neo4jRepository<Genre, Long> {

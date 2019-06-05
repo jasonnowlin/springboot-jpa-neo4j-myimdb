@@ -1,7 +1,7 @@
-package com.crackedskull.services;
+package com.jasonnowlin.services;
 
-import com.crackedskull.domain.Movie;
-import com.crackedskull.repositories.MovieRepository;
+import com.jasonnowlin.domain.Movie;
+import com.jasonnowlin.repositories.MovieRepository;
 import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

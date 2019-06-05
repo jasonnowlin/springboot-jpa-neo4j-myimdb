@@ -1,4 +1,4 @@
-package com.crackedskull.domain;
+package com.jasonnowlin.domain;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

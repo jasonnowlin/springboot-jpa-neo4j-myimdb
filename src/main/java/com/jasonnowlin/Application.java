@@ -1,4 +1,4 @@
-package com.crackedskull;
+package com.jasonnowlin;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

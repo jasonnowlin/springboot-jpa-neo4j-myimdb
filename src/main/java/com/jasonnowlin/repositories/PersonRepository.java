@@ -1,6 +1,6 @@
-package com.crackedskull.repositories;
+package com.jasonnowlin.repositories;
 
-import com.crackedskull.domain.Person;
+import com.jasonnowlin.domain.Person;
 import org.springframework.data.neo4j.repository.Neo4jRepository;
 
 public interface PersonRepository extends Neo4jRepository<Person, Long> {

@@ -1,4 +1,4 @@
-package com.crackedskull.config;
+package com.jasonnowlin.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

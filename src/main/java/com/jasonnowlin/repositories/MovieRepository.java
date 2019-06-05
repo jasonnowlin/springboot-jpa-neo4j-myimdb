@@ -1,6 +1,6 @@
-package com.crackedskull.repositories;
+package com.jasonnowlin.repositories;
 
-import com.crackedskull.domain.Movie;
+import com.jasonnowlin.domain.Movie;
 import java.util.Collection;
 import java.util.Optional;
 import org.springframework.data.neo4j.annotation.Query;

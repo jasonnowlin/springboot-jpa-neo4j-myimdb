@@ -1,7 +1,7 @@
-package com.crackedskull.services;
+package com.jasonnowlin.services;
 
-import com.crackedskull.domain.Genre;
-import com.crackedskull.repositories.GenreRepository;
+import com.jasonnowlin.domain.Genre;
+import com.jasonnowlin.repositories.GenreRepository;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
