@@ -1,0 +1,11 @@
+---
+
+spring:
+  data:
+    neo4j:
+      uri: bolt://localhost:7687
+      username: neo4j
+      password: p@ssw0rd
+      repositories:
+        enabled: true
+      auto-index: update

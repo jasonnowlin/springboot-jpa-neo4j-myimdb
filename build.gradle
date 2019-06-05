@@ -1,0 +1,35 @@
+buildscript {
+  repositories {
+    mavenCentral()
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:2.1.4.RELEASE")
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'io.spring.dependency-management'
+
+bootJar {
+  baseName = 'myimdb'
+  version = '0.0.1-SNAPSHOT'
+}
+
+repositories {
+  mavenCentral()
+}
+
+group = 'com.crackedskull'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+  implementation 'org.springframework.boot:spring-boot-starter-web'
+  implementation 'org.springframework.boot:spring-boot-starter-data-neo4j'
+  implementation 'org.modelmapper:modelmapper:2.3.4'
+
+  testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
