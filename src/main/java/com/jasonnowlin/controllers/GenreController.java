@@ -1,7 +1,7 @@
-package com.crackedskull.controllers;
+package com.jasonnowlin.controllers;
 
-import com.crackedskull.domain.Genre;
-import com.crackedskull.services.GenreService;
+import com.jasonnowlin.domain.Genre;
+import com.jasonnowlin.services.GenreService;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

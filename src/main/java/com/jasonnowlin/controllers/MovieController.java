@@ -1,7 +1,7 @@
-package com.crackedskull.controllers;
+package com.jasonnowlin.controllers;
 
-import com.crackedskull.domain.Movie;
-import com.crackedskull.services.MovieService;
+import com.jasonnowlin.domain.Movie;
+import com.jasonnowlin.services.MovieService;
 import java.util.Collection;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

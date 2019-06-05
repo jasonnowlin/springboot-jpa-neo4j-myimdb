@@ -1,8 +1,8 @@
-package com.crackedskull.controllers;
+package com.jasonnowlin.controllers;
 
-import com.crackedskull.domain.Person;
-import com.crackedskull.exceptions.PersonNotFoundException;
-import com.crackedskull.services.PersonService;
+import com.jasonnowlin.domain.Person;
+import com.jasonnowlin.exceptions.PersonNotFoundException;
+import com.jasonnowlin.services.PersonService;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

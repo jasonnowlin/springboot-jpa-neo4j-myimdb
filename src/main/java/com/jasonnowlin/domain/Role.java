@@ -1,4 +1,4 @@
-package com.crackedskull.domain;
+package com.jasonnowlin.domain;
 
 import org.neo4j.ogm.annotation.EndNode;
 import org.neo4j.ogm.annotation.GeneratedValue;

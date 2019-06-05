@@ -1,4 +1,4 @@
-package com.crackedskull.exceptions;
+package com.jasonnowlin.exceptions;
 
 public class PersonNotFoundException extends Exception {
 
