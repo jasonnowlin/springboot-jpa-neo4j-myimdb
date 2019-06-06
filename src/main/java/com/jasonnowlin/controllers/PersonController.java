@@ -1,11 +1,17 @@
 package com.jasonnowlin.controllers;
 
 import com.jasonnowlin.domain.Person;
+import com.jasonnowlin.exceptions.CustomExceptionDetails;
 import com.jasonnowlin.exceptions.PersonNotFoundException;
 import com.jasonnowlin.services.PersonService;
+import java.time.Instant;
+import java.util.Date;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -50,5 +56,11 @@ public class PersonController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Long id) {
         personService.delete(id);
+    }
+
+    @ExceptionHandler(PersonNotFoundException.class)
+    public final ResponseEntity<CustomExceptionDetails> handlePersonNotFoundException() {
+        CustomExceptionDetails customExceptionDetails = new CustomExceptionDetails(Date.from(Instant.now()), HttpStatus.BAD_REQUEST.value(), "Bad request", "Person not found", "/people/{id}");
+        return new ResponseEntity<>(customExceptionDetails, HttpStatus.BAD_REQUEST);
     }
 }
