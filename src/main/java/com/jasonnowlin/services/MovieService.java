@@ -29,4 +29,8 @@ public class MovieService {
     public Collection<Movie> findByTitleLike(String title) {
         return movieRepository.findByTitleLike(title);
     }
+
+    public void delete(Long id) {
+        movieRepository.deleteById(id);
+    }
 }

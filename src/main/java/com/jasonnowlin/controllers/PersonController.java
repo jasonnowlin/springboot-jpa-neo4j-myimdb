@@ -5,6 +5,7 @@ import com.jasonnowlin.exceptions.PersonNotFoundException;
 import com.jasonnowlin.services.PersonService;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -44,5 +45,10 @@ public class PersonController {
     @PatchMapping("/{id}")
     public Person partialUpdate(@PathVariable Long id, @RequestBody Map<String, String> patch) throws PersonNotFoundException {
         return personService.partialSave(id, patch);
+    }
+
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Long id) {
+        personService.delete(id);
     }
 }

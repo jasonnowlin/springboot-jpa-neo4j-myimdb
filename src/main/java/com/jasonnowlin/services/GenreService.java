@@ -27,5 +27,4 @@ public class GenreService {
     public Optional<Genre> fetch(Long id) {
         return genreRepository.findById(id);
     }
-
 }

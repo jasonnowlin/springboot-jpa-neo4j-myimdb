@@ -39,4 +39,7 @@ public class PersonService {
         return personRepository.findAll();
     }
 
+    public void delete(Long id) {
+        personRepository.deleteById(id);
+    }
 }
